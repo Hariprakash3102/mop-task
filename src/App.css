@@ -7,3 +7,21 @@
 .WelcomeSize{
   font-size: 60px;
 }
+
+.borderLogin{
+  border-right: 2px solid #000;
+}
+
+.eyeIcon{
+  right: 10px; 
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+nav-link {
+  color: black !important;
+}
+
+nav-link:active {
+color: blue !important;
+}
