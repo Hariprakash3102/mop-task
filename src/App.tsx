@@ -5,6 +5,7 @@ import { Route, BrowserRouter as Router, Routes,  } from 'react-router-dom';
 import Dashboard from './components/dashboard/Dashborad';
 import PrivateRoute, { ReturnRouter } from './components/private-router/PrivateRouter';
 import Patients from './components/patients/patients';
+import Referrals from './components/referals/Referrals';
 
 function App() {
   return (
@@ -18,8 +19,8 @@ function App() {
           <Route element={<PrivateRoute />}>
             <Route path="/Dashboard" element={<Dashboard />} />
              <Route path="/Patients" element={<Patients />} />
+            <Route path="/Referrals" element={<Referrals />} />
             {/*<Route path="" element={< />} />
-            <Route path="" element={< />} />
             <Route path="" element={< />} />
             <Route path="/management" element={<Management />} /> */}
           </Route>

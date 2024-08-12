@@ -29,8 +29,8 @@ const Patients = () => {
           <div className="sticky-top">
             <Navbar />
           </div>
-          <div className="mx-2 overflow-y-scroll mt-5">
-            <Table hover className="mx-1 border-0 shadow">
+          <div className="mx-2 overflow-y-scroll mt-5 px-5">
+            <Table hover className="mx-1 border-0 shadow rounded">
               <thead className="sticky-top fw-semibold fs-5">
                 <tr>
                   <td>PATIENT</td>

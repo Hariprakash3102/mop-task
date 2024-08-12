@@ -2,6 +2,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .WelcomeSize{
@@ -24,4 +27,12 @@ nav-link {
 
 nav-link:active {
 color: blue !important;
+}
+
+.searchReferralWidth{
+  width: 300px;
+}
+
+.searchInput::placeholder{
+ text-align: center;
 }

@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "react-bootstrap";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import logo from '../../assets/mop-image.png'
 
 const FormNavbar = () => {
   return (
@@ -9,7 +10,7 @@ const FormNavbar = () => {
       <div>
         <div className="pt-1 bg-white height ms-auto px-3">
           <Navbar expand="lg" className="w-100 ">
-            <Navbar.Brand>React-Bootstrap</Navbar.Brand>
+            <Navbar.Brand><img src={logo} className='img-fluid p-4 ms-1' alt="Logo" width={'220px'} /></Navbar.Brand>
             <div className="px-5 d-none d-lg-flex">
               <NavDropdown
                 id="nav-dropdown-dark-example"

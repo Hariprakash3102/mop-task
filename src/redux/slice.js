@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const rtkQuery = createApi({
     reducerPath: 'rtkQuery',
     baseQuery: fetchBaseQuery({
-        baseUrl: 'https://devapi.myorthopedicproblem.com/v1/provider',
+        baseUrl: 'https://devapi.myorthopedicproblem.com/v1',
         prepareHeaders: (headers) => {
             const token = sessionStorage.getItem("mop_token");
             if (token) {
@@ -14,9 +14,12 @@ export const rtkQuery = createApi({
     }),
     endpoints: (builder) => ({
         getRtk: builder.query({
-            query: ({ limit, page }) => `/patient?limit=${limit}&page=${page}&sortBy=createdAt:desc`,
+            query: ({ limit, page }) => `/provider/patient?limit=${limit}&page=${page}&sortBy=createdAt:desc`,
         }),
+        getRefferal: builder.query({
+            query: ({ limit, page }) => `/referral/list?limit=${limit}&page=${page}`,
+        })
     }),
 });
 
-export const { useGetRtkQuery } = rtkQuery;
+export const { useGetRtkQuery,useGetRefferalQuery } = rtkQuery; 
