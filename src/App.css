@@ -21,12 +21,20 @@
   transform: translateY(-50%);
   cursor: pointer;
 }
-nav-link {
-  color: black !important;
+.nav-link {
+  color: black; 
 }
 
-nav-link:active {
-color: blue !important;
+.nav-link.active {
+  color: #2c65fb;
+}
+
+.nav-link:hover {
+  color: black;
+}
+
+.nav-link.active:hover {
+  color: #2c65fb; 
 }
 
 .searchReferralWidth{
@@ -35,4 +43,20 @@ color: blue !important;
 
 .searchInput::placeholder{
  text-align: center;
+}
+
+.logout{
+  color: black;
+}
+.logout:hover{
+  color: #2c65fb; 
+}
+
+.ref_nav_link{
+  color: black !important;
+}
+
+.ref_nav_link.active{
+  color: blue !important;
+  border-bottom: 5px solid blue;
 }
